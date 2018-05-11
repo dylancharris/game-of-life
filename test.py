@@ -16,4 +16,25 @@ assert not l.alive_rule(0, 1)
 assert not l.alive_rule(1, 1) 
 assert not l.alive_rule(1, 4) 
 
+# second test: Set and get cells from the board
+# Life object includes board getters/setters
+# board initially all dead
+# dead = False, alive = True
 
+assert not l.get(0,0)
+assert not l.get(1,4)
+assert not l.get(3,3)
+assert not l.get(2,2)
+
+l.set(0,0)
+l.set(1,1)
+
+assert l.get(0,0)
+assert l.get(1,1)
+assert not l.get(3,3)
+
+l.set(3,3)
+assert l.get(3,3)
+
+l.clear(1,1)
+assert not l.get(1,1)
