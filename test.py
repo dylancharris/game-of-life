@@ -71,3 +71,12 @@ assert l.format() == [
  " #  ",
  "    ",
  "   #"]
+
+# read input
+with open("f1.gol") as infile:
+	l.read(infile)
+with open("f1.gol") as infile:
+	# format shouldn't include the trailing newlines
+	assert [line.rstrip("\n") for line in infile.readlines()] == l.format()
+    
+
