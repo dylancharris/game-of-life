@@ -7,14 +7,14 @@ from implementation import Life
 
 l = Life()
 
-assert l.alive_rule(1, 2) 
-assert l.alive_rule(1, 3) 
-assert l.alive_rule(0, 3) 
-assert not l.alive_rule(0, 2) 
-assert not l.alive_rule(0, 4) 
-assert not l.alive_rule(0, 1) 
-assert not l.alive_rule(1, 1) 
-assert not l.alive_rule(1, 4) 
+assert l.alive_rule(1, 2)
+assert l.alive_rule(1, 3)
+assert l.alive_rule(0, 3)
+assert not l.alive_rule(0, 2)
+assert not l.alive_rule(0, 4)
+assert not l.alive_rule(0, 1)
+assert not l.alive_rule(1, 1)
+assert not l.alive_rule(1, 4)
 
 # second test: Set and get cells from the board
 # Life object includes board getters/setters
