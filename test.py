@@ -38,3 +38,12 @@ assert l.get(3,3)
 
 l.clear(1,1)
 assert not l.get(1,1)
+l.set(1,1)
+assert l.get(1,1)
+
+# count neighbors
+# Live.count(x,y) = the number of live neighbors
+assert l.count(0,0) == 1
+assert l.count(1,1) == 1
+assert l.count(0,1) == 2
+assert l.count(2,2) == 2
