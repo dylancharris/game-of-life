@@ -5,7 +5,7 @@ from implementation import Life
 # returns True iff a cell that is currently <current> and with
 # <neighbors> neighbors will be alive in the next generation
 
-l = new Life()
+l = Life()
 
 assert l.alive_rule(1, 2) 
 assert l.alive_rule(1, 3) 
